@@ -149,7 +149,8 @@
     var ssPhotoswipe = function() {
         var items = [],
             $pswp = $('.pswp')[0],
-            $folioItems = $('.item-folio');
+            $folioItems = $('.item-folio'),
+            $buttonItems = $('.button-item');
 
             // get items
             $folioItems.each( function(i) {
@@ -189,6 +190,20 @@
                     }
 
                     // initialize PhotoSwipe
+                    var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                    lightBox.init();
+                });
+
+            });
+
+            $buttonItems.each(function() {
+                $(this).on('click', function(e) {
+                    e.preventDefault();
+                    var options = {
+                        index : 0,
+                        showHideOpacity: true
+                    }
+
                     var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
                     lightBox.init();
                 });
