@@ -165,7 +165,7 @@
                     $size = $thumbLink.data('size').split('x'),
                     $width  = $size[0],
                     $height = $size[1];
-         
+
                 var item = {
                     src  : $href,
                     w    : $width,
@@ -197,10 +197,13 @@
             });
 
             $buttonItems.each(function() {
+
+                var $index_val = $(this).data('index');
+
                 $(this).on('click', function(e) {
                     e.preventDefault();
                     var options = {
-                        index : 0,
+                        index : $index_val,
                         showHideOpacity: true
                     }
 
