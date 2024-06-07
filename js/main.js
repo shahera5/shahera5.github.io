@@ -332,7 +332,34 @@
 
         });
     };
+    /* custom-smooth-scroll.js */
 
+    /* Custom Smooth Scrolling
+    * ------------------------------------------------------ */
+    var customSmoothScroll = function() {
+        $('.smoothscroll-custom').on('click', function (e) {
+            var target = this.hash,
+                $target = $(target);
+        
+            e.preventDefault();
+            e.stopPropagation();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+        }, cfg.scrollDuration, 'swing', function () {  // Adjust the duration as needed
+                window.location.hash = target;
+            });
+        });
+    };
+
+    // Call the custom smooth scroll function
+    $(document).ready(function() {
+        customSmoothScroll();
+    });
+
+
+
+    
 
     /* Placeholder Plugin Settings
      * ------------------------------------------------------ */
