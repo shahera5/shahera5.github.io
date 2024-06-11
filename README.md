@@ -1,31 +1,37 @@
-# My Portfolio
+# Shahera's Portfolio
 
-This is my personal portfolio, showcasing my projects and skills. It is based on the template created by Samia S Sama (https://github.com/samia7/samia7.github.io).
-
-## Customizations
-
-- Completely redesigned the layout to match my personal style.
-- Added new sections for recent projects and blog posts.
-- Integrated a contact form using [Technology/Service].
-- Improved responsiveness and accessibility.
+Welcome to my personal portfolio website! This site showcases my technical skills, projects, and achievements. You can explore my work and learn more about my expertise and professional journey.
 
 ## About Me
 
-I'm passionate about the intersection of technology and data, with a particular focus on Python programming and machine learning. My journey into the world of data science began with Python, where I discovered the power of its simplicity and versatility. From building applications to analyzing data and implementing machine learning models, Python has been my trusted companion throughout my exploration of this fascinating field.
+I am passionate about Data Science and Machine Learning. My skills span various technologies and tools, and I am always eager to learn and take on new challenges.
 
-As a seasoned technical writer with a background in electrical engineering, I bring a unique blend of technical expertise and communication skills to the table. With a degree in electrical engineering, I've honed my analytical mindset and problem-solving abilities, allowing me to navigate complex technical concepts with ease.
+## Technical Skills
 
-## Projects
+Here are some of the technical skills you can find on my portfolio:
+- Python
+- C++
+- SQL
+- Oxygen XML
+- MATLAB
+- Git
+- Jira
+- Machine Learning
 
-High-throughput on chip dialtsis
-Sustainable engineering project
-Real-estate price prediction model
-Sephora ingredient checker
-Blackjack game
-War
-Tictactoe
+
+## Acknowledgements
+
+This portfolio is based on a forked project from [Samia Sama's portfolio](https://samia7.github.io/). I have made several modifications to tailor it to my own content and preferences.
 
 
 ## Contact
 
-Email: Shahera240@outlook.com
+Feel free to reach out to me via shahera240@outlook.com or connect with me on Linkedin: https://www.linkedin.com/in/shahera-islam/.
+
+Visit my portfolio here (https://shahera5.github.io/).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
