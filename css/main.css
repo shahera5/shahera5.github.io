@@ -5,6 +5,8 @@
  *  ------------------------------------------------------------------
  *
  *  TOC:
+ *  # hobbies-images
+ *  # new-masonry
  *  # webfonts and iconfonts
  *  # base style overrides
  *      ## links
@@ -52,6 +54,87 @@
  *      ## comments
  *
  * =================================================================== */
+
+/*  hobbies */
+.hobbies-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure {
+    margin: 10px;
+    text-align: center;
+    width: 30%; /* Adjust the width as needed */
+}
+
+figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* new masonry */
+/* New Masonry Styles for Technical Skills */
+.new-masonry-wrap {
+    margin-top: 4.8rem;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.new-masonry {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.new-masonry:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.new-masonry__brick {
+    float: left;
+    box-sizing: border-box; /* Ensure padding does not affect the box size */
+    width: 33.33%; /* Set each brick to occupy one-third of the available width */
+    padding: 1%; /* Add padding for spacing between bricks */
+}
+
+.new-masonry__brick img {
+    width: 100%;
+    height: auto;
+    border: none; /* Ensure no borders */
+    box-shadow: none; /* Remove shadows */
+    max-width: 100%; /* Ensure images do not exceed the brick size */
+}
+
+.new-masonry__brick figcaption {
+    margin-top: 0.1rem; /* Space between image and caption */
+    font-size: 2rem; /* Caption text size */
+    color: #333; /* Caption text color */
+    font-family: "Raleway-regular", serif;
+    line-height: 1.875;
+}
+
+
+/* Responsive styles if needed */
+@media only screen and (max-width: 600px) {
+    .new-masonry__brick {
+        width: 100%; /* On smaller screens, make each brick occupy the full width */
+    }
+}
 
 
 /* ===================================================================
@@ -2794,92 +2877,6 @@ html.no-csstransitions .home-content__main {
     background-color: #f1f1f1;
     position: relative;
 }
-
-.s-hobbies .hobbies-masonry-wrap {
-    margin-top: 4.8rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.s-hobbies .hobbies-masonry:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.s-hobbies .hobbies-masonry .grid-sizer,
-.s-hobbies .hobbies-masonry__brick {
-    width: 30%;
-    margin-bottom: 1rem;
-}
-
-.s-hobbies .hobbies-masonry__brick {
-    float: left;
-    padding: 0;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-}
-
-.s-hobbies .item-folio {
-    position: relative;
-    overflow: hidden;
-}
-
-.s-hobbies .item-folio__thumb img {
-    vertical-align: top;
-    width: 100%;
-    height: auto;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-.s-hobbies .item-folio__thumb:hover img {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-@media only screen and (max-width: 1700px) {
-    .s-hobbies .hobbies-masonry-wrap {
-        width: 100%;
-    }
-    .s-hobbies .hobbies-masonry .grid-sizer,
-    .s-hobbies .hobbies-masonry__brick {
-        width: 45%;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    .s-hobbies .hobbies-masonry .grid-sizer,
-    .s-hobbies .hobbies-masonry__brick {
-        width: 48%;
-    }
-}
-
-@media only screen and (max-width: 1099px) {
-    .s-hobbies .hobbies-masonry-wrap {
-        width: 90%;
-        max-width: 800px;
-    }
-    .s-hobbies .hobbies-masonry .grid-sizer,
-    .s-hobbies .hobbies-masonry__brick {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .s-hobbies .hobbies-masonry .grid-sizer,
-    .s-hobbies .hobbies-masonry__brick {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .s-hobbies .hobbies-masonry-wrap {
-        width: auto;
-    }
-}
-
 
 /* ===================================================================
  * # testimonials - (_site-layout.scss)
